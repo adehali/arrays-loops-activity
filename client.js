@@ -6,6 +6,13 @@
  * 3. After the loop, log out the total number of
  *    hobbies
  */
+console.log('1-GROUP MEMBER HOBBIES');
+
+let memberHobbies = ['swimming', 'soccer', 'painting', 'board games']; 
+for (let i = 0; i <= 3; i++){
+     console.log(memberHobbies[i]);
+   }
+   console.log('Total number of hobbies:', memberHobbies.length);
 
 
 // Example output
@@ -25,6 +32,16 @@
  * 4. Output the array and number of times teal was found
  */
 
+let colors = ['green', 'red', 'teal', 'orange', 'teal']
+let tealCounts = 0;
+for (color of colors ){
+     if (color === 'teal'){
+    tealCounts++; 
+     }
+}
+console.log('Colors:', colors);
+console.log('The number of times of teal:', tealCounts);
+
 
 // Example output
 // green, red, teal, orange, teal
@@ -41,6 +58,27 @@
  * 4. Output the original array, odd number array and even number array
  */
 
+console.log('Array Numbers, Odd-Numbers, and Even-Numbers:');
+
+let arrayNumbers = ['3', '7', '2', '8', '11', '4', '2']
+let oddNumbers = []; 
+let evenNumbers = []; 
+for (let i = 0; i < arrayNumbers.length; i++ ){
+     if (arrayNumbers[i] % 2 === 0){
+          evenNumbers.push(arrayNumbers[i]);
+     }
+     else {
+          oddNumbers.push(arrayNumbers[i]);
+     }
+}
+console.log('Array Numbers:', arrayNumbers);
+console.log('Odd Numbers:', oddNumbers);
+console.log('Even Numbers:', evenNumbers);
+
+
+
+
+
 
 // Example output
 // 3, 7, 2, 8, 11, 4, 2
@@ -56,6 +94,17 @@
  * 3. Write a loop that adds the opposite value to the toggled array
  * 4. Output both arrays
  */
+
+let booleanArray = [true, false, true, false, true, false,];
+let toggled = [];
+for (let Oppositevalue of booleanArray){
+         toggled.push(!Oppositevalue);
+
+     }
+console.log('Boolean Array:', booleanArray);
+console.log('Toggled Array:', toggled);
+
+
 
 
 // Example output
