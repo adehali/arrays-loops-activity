@@ -123,11 +123,12 @@ console.log('Toggled Array:', toggled);
 
 let stretch = [3, 0, 2, 8, 0, 0, 0]; 
 console.log('Remove 0s:', stretch);
-for (let numbers of stretch ){
-     if (stretch.length > 0 && stretch[stretch.length -1] === 0)
-          stretch.pop(0);
-}
 
+while (stretch.length > 0 && stretch[stretch.length -1] === 0){
+
+     stretch.pop(0);
+}
+         
 console.log('Removed 0s from the end:', stretch);
 
 
