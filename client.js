@@ -77,9 +77,6 @@ console.log('Even Numbers:', evenNumbers);
 
 
 
-
-
-
 // Example output
 // 3, 7, 2, 8, 11, 4, 2
 // Odd 3, 7, 11
@@ -124,6 +121,16 @@ console.log('Toggled Array:', toggled);
  * Hint: Try using a while loop for this one.
  */
 
+let stretch = [3, 0, 2, 8, 0, 0, 0]; 
+console.log('Remove 0s:', stretch);
+for (let numbers of stretch ){
+     if (stretch.length > 0 && stretch[stretch.length -1] === 0)
+          stretch.pop(0);
+}
+
+console.log('Removed 0s from the end:', stretch);
+
+
 
 // Example output
 // Before loop 3, 0, 2, 8, 0, 0, 0
@@ -139,6 +146,25 @@ console.log('Toggled Array:', toggled);
       and lowest numbers.
  * 3. Log the highest and lowest number to the console
  */
+
+let largishArray = [2, 2, -3, 7, 4, 1, 7, 12, 8];
+let highNumber = [0];
+let lowNumber = [0];
+
+for (let array of largishArray ){
+     if (array > highNumber){
+          highNumber = array;
+     }
+     if (array < lowNumber) {
+         
+          lowNumber = array;
+     }
+}
+console.log('largish array:', largishArray);
+console.log('Highes numers:', highNumber);
+console.log('Lowest Number', lowNumber);
+
+
 
 
 // Example output
